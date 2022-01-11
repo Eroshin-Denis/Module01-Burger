@@ -1,6 +1,9 @@
 body {
     font-family: 'Nunito Sans', sans-serif;
 }
+header {
+    border-bottom: 1px solid#DEDEDE;
+}
 .header {
     font-family: 'Open Sans', sans-serif;
     display: flex;
@@ -29,6 +32,9 @@ body {
     color: #443737;  
     text-decoration: none;                        
 }
+.header-nav a:hover {
+    color: #FFC725;
+}
 .header-nav a::after {
     content: '';
     width: 100%;
@@ -53,12 +59,12 @@ body {
     border: none;
     padding: 0;
     gap:10px;
+    cursor: pointer;
 }
 .button-count {
-    font-family: Lato;
-    color: #FFFFFF;
     font-weight: 700;
     font-size: 13px;
+    color: #FFFFFF;
     background: #F37335;
     border-radius: 100%;
     position: absolute;
@@ -77,6 +83,7 @@ body {
 .button-item {
     position: relative;
 }
+
 .bg {
    text-align: center;
    color: #FFFFFF;
@@ -84,6 +91,7 @@ body {
    background-size: cover; 
    background-position: center center;
    padding: 142px 0;
+   margin-bottom: 140px;
 }
 .breadcrumbs {
     padding-left: 0;
@@ -91,7 +99,7 @@ body {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 7px;
 }
 .breadcrumbs a {
     color: #DEDEDE;
@@ -99,25 +107,78 @@ body {
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
 }
+.breadcrumbs a:hover {
+    color: #FFC725;
+}
 .breadcrumbs a::before {
     content: "/";
     position: relative;
-    left: -7px;
+    left: -3px;
+    pointer-events: none;
 }
+.breadcrumbs a:hover::before {
+    color: #DEDEDE;
+} 
 .breadcrumbs li:first-child a::before {
     display: none;
 }
 .title {
     font-weight: 700;
     font-size: 79px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 17px;
+    margin-bottom: 20px;
 }
 .description {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.6;
     color: #FAF9F9;
     max-width: 320px;
     margin: 0 auto;
 }
+
+
+
+.banner-box {
+    background-image: url(../images/Banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center;
+    padding: 100px 0;
+}
+.banner-title {
+    position: relative;
+    font-weight: 900;
+    color: #FFFFFF;
+    left: 100px;
+    font-weight: 900;
+    font-size: 2em;
+}
+.banner-title span {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    background: #F37335;
+    border-radius: 14px;
+    padding: 5px 20px 5px 17px;
+    font-size: 1em;
+}
+.banner-text {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    color: #FAF9F9;
+    left: 100px;
+}
+.banner-link {
+    position: relative;
+    left: 100px;
+    color: #1E2F40;
+    text-decoration: none;
+    background: #FBB731;
+    border-radius: 5px;
+    padding: 10px 5px;
+}
+
+
