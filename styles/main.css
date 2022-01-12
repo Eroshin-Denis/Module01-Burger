@@ -9,8 +9,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 26px;
+    padding-top: 53px;
     padding-bottom: 25px;
+    
 }
 .header-logo {
     display: block;
@@ -91,7 +92,7 @@ header {
    background-size: cover; 
    background-position: center center;
    padding: 142px 0;
-   margin-bottom: 140px;
+   margin-bottom: 113px;
 }
 .breadcrumbs {
     padding-left: 0;
@@ -139,46 +140,57 @@ header {
 
 
 
-.banner-box {
+.container3 {
     background-image: url(../images/Banner.jpg);
+    background-size: cover;
+    width: 1180px;
+    height: 438px;
     background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center center;
-    padding: 100px 0;
+    margin: 0 auto;
 }
-.banner-title {
+.banner-box {
     position: relative;
-    font-weight: 900;
-    color: #FFFFFF;
+    width: 353px;
+    height: 238px;
     left: 100px;
-    font-weight: 900;
-    font-size: 2em;
+    top: 100px;
 }
 .banner-title span {
     position: relative;
+    color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
-    color: white;
-    font-size: 1em;
     font-weight: 600;
+    font-size: 14px;
+    line-height: 65px;
+    padding: 5px 20px 5px 17px;
     background: #F37335;
     border-radius: 14px;
-    padding: 5px 20px 5px 17px;
-    font-size: 1em;
+    top: -23px;
+}
+.banner-title {
+    position: relative;
+    display: inline-block;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 6px;
+    color: #FFFFFF;
+    margin: 0;
+    top: 0px;
+    margin-bottom: 33px;
 }
 .banner-text {
-    font-family: 'Open Sans', sans-serif;
     position: relative;
     color: #FAF9F9;
-    left: 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 40px;
 }
 .banner-link {
-    position: relative;
-    left: 100px;
     color: #1E2F40;
+    font-weight: 700;
     text-decoration: none;
     background: #FBB731;
     border-radius: 5px;
-    padding: 10px 5px;
+    padding: 22px 28px 15px 28px;   
 }
-
-
