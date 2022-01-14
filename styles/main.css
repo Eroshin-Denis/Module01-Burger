@@ -92,7 +92,7 @@ header {
    background-size: cover; 
    background-position: center center;
    padding: 142px 0;
-   margin-bottom: 140px;
+   margin-bottom: 137px;
 }
 .breadcrumbs {
     padding-left: 0;
@@ -141,5 +141,49 @@ header {
 
 .banner-box {
     background-image: url(../images/Banner.jpg);
-
+    background-size: cover; 
+    background-position: center center;
+    padding: 100px 100px 119px 100px; 
+    margin-bottom: 140px;
+}
+.banner-title span {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background: #F37335;
+    border-radius: 14px;
+    max-width: 95px;
+    text-align: center;
+    padding: 5px 0;
+    margin-bottom: 10px;
+}
+.banner-title {
+    font-weight: 900;
+    font-size: 60px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 0;
+}
+.banner-text {
+    width: 353px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #FAF9F9;
+    line-height: 1.6;
+    margin: 13px 0 33px 0;
+}
+.banner-link {
+    font-weight: 700;
+    font-size: 14px;
+    color: #1E2F40;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #FBB731;
+    border-radius: 5px;
+    padding: 20px 25px;
 }
