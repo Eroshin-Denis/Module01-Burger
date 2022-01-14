@@ -92,7 +92,7 @@ header {
    background-size: cover; 
    background-position: center center;
    padding: 142px 0;
-   margin-bottom: 137px;
+   margin-bottom: 140px;
 }
 .breadcrumbs {
     padding-left: 0;
@@ -139,3 +139,7 @@ header {
 }
 
 
+.banner-box {
+    background-image: url(../images/Banner.jpg);
+
+}
