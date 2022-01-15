@@ -137,14 +137,14 @@ header {
     max-width: 320px;
     margin: 0 auto;
 }
-
-
+/* Модуль01 Урок 12 */
 .banner-box {
     background-image: url(../images/Banner.jpg);
+    background-repeat: no-repeat;
     background-size: cover; 
-    background-position: center center;
+    background-position: 0 center;
     padding: 100px 100px 119px 100px; 
-    margin-bottom: 140px;
+    margin-bottom: 80px;
 }
 .banner-title span {
     display: block;
@@ -164,11 +164,10 @@ header {
     font-weight: 900;
     font-size: 60px;
     color: #FFFFFF;
-    text-transform: uppercase;
     margin: 0;
 }
 .banner-text {
-    width: 353px;
+    max-width: 353px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 15px;
@@ -187,3 +186,4 @@ header {
     border-radius: 5px;
     padding: 20px 25px;
 }
+/* Модуль01 Урок13 */
