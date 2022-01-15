@@ -187,3 +187,92 @@ header {
     padding: 20px 25px;
 }
 /* Модуль01 Урок13 */
+.menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-title {
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #182A49;
+    margin: 0;
+}
+.menu-select {
+    border: 1px solid #DEDEDE;
+    padding: 13px 20px;
+    border-radius: 22px;
+    color: #443737;
+    font-size: 15px;
+    appearance: none;
+    flex-basis: 279px;
+    background-image: url(../images/arrow.svg);
+    background-size: 12.79px 7.75px;
+    background-repeat: no-repeat;
+    background-position: 89% center;
+}
+
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.menu-grid-item {
+    display: grid; 
+    justify-items: center;
+    align-content: space-evenly;
+}
+.menu-grid-cover {
+    width: 100%;
+    height: 430px;
+    position: relative;
+    overflow: hidden;
+}
+.menu-grid-cover img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    width: 100%;
+    height: 430px;
+}
+
+
+.menu-grid-title {
+    font-weight: 600;
+    font-size: 30px;
+    color: #1B2A49;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.menu-grid-price {
+    font-weight: 700;
+    font-size: 20px;
+    color: #979797;
+    margin-top: 0;
+}
+.menu-grid-text {
+    font-weight: 700;
+    font-size: 14px;
+    color: #1E2F40;
+    text-align: center;
+    text-transform: uppercase;
+}
+.menu-grid-icon {
+    color: transparent;
+    background-image: url(../images/cart-menu.svg);
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.menu-grid-btn {
+    border: none;
+    width: 152px;
+    height: 38px;
+    background: #FBB731;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
