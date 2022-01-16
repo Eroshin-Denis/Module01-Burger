@@ -218,6 +218,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    margin-bottom: 100px;
 }
 .menu-grid-item {
     display: grid; 
@@ -277,3 +278,60 @@ header {
     margin-bottom: 30px;
 }
 /* Дополнительная секция */
+ /* урок14 */
+ .footer {
+    background: #1E2F40;
+    color:#fff;
+    padding-top: 117px;
+    padding-bottom: 106px;
+}
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo {
+    width: 63px;
+    height: 56px;
+}
+.footer-item {                                                    /*no*/   
+    flex: 0 0 auto;                                        /*no*/ 
+}                                                          /*no*/
+.footer-item h2 {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+}
+.footer-item li {
+    margin-bottom: 9px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color:#FAF9F9;                                         /*no*/
+    font-weight: 700;
+    line-height: 24px;
+}
+.footer-item a {
+    color: #DEDEDE;
+    text-decoration: none;
+    font-weight: 400;
+}
+.footer-item span {
+    color: #DEDEDE;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+.footer-tel ul {
+    font-size: 20px;
+    font-weight: 900;
+    color: #FBB731;
+    margin-top: 0;
+}
+.footer-tel li {
+    margin-bottom: 12px;
+}
+.footer-list {
+    padding-left: 0;
+    list-style-type: none;
+}
+/* Модуль01 урок 15 */
