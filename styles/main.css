@@ -302,7 +302,7 @@ header {
     text-transform: uppercase;
     margin-bottom: 19px;
 }
-.footer-item li {
+.footer-list li {
     margin-bottom: 9px;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
@@ -310,7 +310,10 @@ header {
     font-weight: 700;
     line-height: 24px;
 }
-.footer-item a {
+.footer-list-tel {
+    margin-top: 0;
+}
+.footer-list a {
     color: #DEDEDE;
     text-decoration: none;
     font-weight: 400;
@@ -321,13 +324,14 @@ header {
     font-weight: 400;
     margin-bottom: 2px;
 }
-.footer-tel ul {
+.footer-list-tel a {
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
-    font-weight: 900;
+    font-weight: 800;
+    text-transform: uppercase;
     color: #FBB731;
-    margin-top: 0;
 }
-.footer-tel li {
+.footer-list-tel li {
     margin-bottom: 12px;
 }
 .footer-list {
@@ -335,3 +339,29 @@ header {
     list-style-type: none;
 }
 /* Модуль01 урок 15 */
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 68.5%;   /*начало элемена флекс nav*/
+}
+.banner-link {   /* описание стиля класса что выше, дополнительное  */
+    border: 1px solid #FBB731;   /* рамка для кнопки класс ещё описан выше  */
+    padding: 18px 25px;       /* уменьшение полей для ввода рамки */
+}
+.banner-link:hover {
+    background-color: transparent;
+    color: #FBB731;
+}
+.menu-grid-btn:hover {  /* класс полнен который выше */
+    background-color: #F37335;
+    cursor: pointer;
+}
+.footer-list li a:hover {
+    color: yellow;
+}
+.footer-list-tel li a:hover {
+    color: #DEDEDE;
+}
+/* 14 урок Модул01 */
+
