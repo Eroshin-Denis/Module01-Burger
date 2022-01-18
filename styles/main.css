@@ -135,8 +135,17 @@ header {
     line-height: 1.6;
     color: #FAF9F9;
     max-width: 320px;
-    margin: 0 auto;
+    margin: 0;
 }
+.description-menu {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #FAF9F9;
+    max-width: 320px;
+    margin: 0 auto;
+} 
+
 /* Модуль01 Урок 12 */
 .banner-box {
     background-image: url(../images/Banner.jpg);
@@ -374,21 +383,21 @@ header {
     display: flex;
     justify-content: space-between;
 }
-.text{
+.content {
     color: #FAF9F9;
     flex: 0 0 580px;
     padding-top: 170px;
     padding-bottom: 170px;
 }
-h1{                                                       /*обращение через класс*/
+.content-title {                                                       /*обращение через класс*/
     font-size: 120px;
     font-weight: 800;
     text-transform: uppercase;
     line-height: 140px; /* or 117% */
-    margin-bottom: 40px;
-
+    margin-bottom: 0px;
+    margin-top: 0;
 }
-h1 span{
+.content-title span{
     color: #FBB731;
     font-size: 30px;
     font-weight: 700;
@@ -396,14 +405,14 @@ h1 span{
     display: block;
     margin-bottom: 10px;
 }
-.text p{                                               
-    font-family: 'Lato', sans-serif;
+.content-text {                                               
+    font-family: 'Open Sans', sans-serif;
     font-size: 19px;
     color: #DEDEDE;                                                      /*color: #DEDEDE;*/  
     line-height: 1.4; 
     margin-bottom: 42px;   
 }
-.main a,
+.content-link,
 .promo a {
     color: #1E2F40;
     background-color: #FBB731;                             /*background: #FBB731;*/  
@@ -423,7 +432,7 @@ h1 span{
     position: relative;
 
 }
-.bg{                                                      
+.visual-bg{                                                      
     width: 432px;
     height: 100%;
     background: linear-gradient(2.42deg, #F37335 -19.6%, #FBB731 100.79%, #FDC830 100.79%);
@@ -434,8 +443,8 @@ h1 span{
     right: -168px;
 }
 .promo {
-    padding-top: 186px;
-    padding-bottom: 186px;
+    padding-top: 46px;
+    padding-bottom: 46px;
 }
 .promo-left,
 .promo-right {
@@ -449,11 +458,11 @@ h1 span{
    
 }
 .promo-left {
-    background-image: url(../image/promo-left.png);
+    background-image: url(../images/promo-left.png);
     padding: 116px 50px;
 }
 .promo-right {
-    background-image: url(../image/promo-right.png);
+    background-image: url(../images/promo-right.png);
     padding: 102px 50px;
 }
 .sale {
@@ -465,22 +474,26 @@ h1 span{
     display: inline-block;
     text-transform: uppercase;
     margin-bottom: 3px;
+    margin-top: 0;
 }
 .cost{
     font-size: 50px;                                       /*60px*/
     font-weight: 900;
     margin-bottom: 8px;
+    margin-top: 0;
 }
-.description {
-    font-family: 'Lato', sans-serif;
+.promo-description {
+    font-family: 'Open Sans', sans-serif;
     color: #FAF9F9;
     font-size: 15px;
     line-height: 24px;
+    margin-bottom: 0;
+
 }
-.promo-left .description {
+.promo-left .promo-description {
     max-width: 392px;
 }
-.promo-right .description {
+.promo-right .promo-description {
     max-width: 300px;
     margin-bottom: 20px;
 }
@@ -488,4 +501,5 @@ h1 span{
     font-size: 44px;
     font-weight: 700;
     margin-bottom: 10px;
+    margin-top: 0;
 }
