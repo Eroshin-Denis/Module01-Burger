@@ -233,11 +233,6 @@ header {
     gap: 55px 20px;
     margin-bottom: 40px;
 }
-.menu-grid-item {
-    display: grid; 
-    justify-items: center;
-    align-content: space-evenly;
-}
 .menu-grid-cover {
     width: 100%;
     height: 430px;
@@ -261,12 +256,14 @@ header {
     color: #1B2A49;
     margin-bottom: 10px;
     margin-top: 20px;
+    text-align: center;
 }
 .menu-grid-price {
     font-weight: 700;
     font-size: 20px;
     color: #979797;
     margin-top: 0;
+    text-align: center;
 }
 .menu-grid-text {
     font-weight: 700;
@@ -288,11 +285,13 @@ header {
     left: -5px;
 }
 .menu-grid-btn {
+    display: block;
     border: none;
     width: 152px;
     height: 38px;
     background: #FBB731;
     border-radius: 5px;
+    margin: 0 auto;
 }
 .menu-footer {
     margin: 105px 0 35px 0;
