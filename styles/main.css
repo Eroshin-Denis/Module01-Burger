@@ -9,9 +9,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 53px;
+    padding-top: 25px;
     padding-bottom: 25px;
-    
+    margin-top: 28px;
 }
 .header-logo {
     display: block;
@@ -197,7 +197,7 @@ header {
 }
 /* Модуль01 Урок13 */
 .menu {
-    margin-bottom: 115px;
+    margin-bottom: 145px;
 }
 .menu-header {
     display: flex;
@@ -230,7 +230,7 @@ header {
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px 20px;
+    gap: 55px 20px;
     margin-bottom: 40px;
 }
 .menu-grid-item {
@@ -293,10 +293,9 @@ header {
     height: 38px;
     background: #FBB731;
     border-radius: 5px;
-    margin-bottom: 30px;
 }
 .menu-footer {
-    margin: 75px 0 35px 0;
+    margin: 105px 0 35px 0;
 }
 /* Дополнительная секция */
  /* урок14 */
