@@ -196,10 +196,14 @@ header {
     padding: 20px 25px;
 }
 /* Модуль01 Урок13 */
+.menu {
+    margin-bottom: 115px;
+}
 .menu-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 105px 0 37px 0;
 }
 .menu-title {
     font-size: 44px;
@@ -226,8 +230,8 @@ header {
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-bottom: 100px;
+    gap: 25px 20px;
+    margin-bottom: 40px;
 }
 .menu-grid-item {
     display: grid; 
@@ -271,12 +275,17 @@ header {
     text-align: center;
     text-transform: uppercase;
 }
-.menu-grid-icon {
-    color: transparent;
+
+.menu-grid-icon { 
+    display: inline-block;
+    width: 18px;
+    height: 18px;
     background-image: url(../images/cart-menu.svg);
     background-size: 18px 18px;
     background-repeat: no-repeat;
-    background-position: right center;
+    position: relative;
+    top: 4px;
+    left: -5px;
 }
 .menu-grid-btn {
     border: none;
@@ -285,6 +294,9 @@ header {
     background: #FBB731;
     border-radius: 5px;
     margin-bottom: 30px;
+}
+.menu-footer {
+    margin: 75px 0 35px 0;
 }
 /* Дополнительная секция */
  /* урок14 */
@@ -303,13 +315,14 @@ header {
     height: 56px;
 }
 .footer-item {                                                    /*no*/   
-    flex: 0 0 auto;                                        /*no*/ 
+    flex: 0 0 auto;                                       /*no*/ 
 }                                                          /*no*/
 .footer-item h2 {
     font-size: 20px;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 19px;
+    margin-top: 0;
 }
 .footer-list li {
     margin-bottom: 9px;
