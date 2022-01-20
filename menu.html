@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <header>
+    <header id="headerTop">
         <div class="container">
             <div class="header">
                 <div class="header-item">
@@ -227,5 +227,41 @@
             </div>
         </div>
     </footer>
+    <a href="#headerTop" class="button-up" id="btnUp">Наверх</a>
+    <script>
+        // медленный скрол
+        const links = document.querySelectorAll(".banner-link");
+            for (const link of links) {
+                link.addEventListener("click", clickHandler);
+            }
+        function clickHandler(e) {
+            e.preventDefault();
+            const href=this.getAttribute("href");
+        document.querySelector(href).scrollIntoView({
+            behavior: "smooth"
+        });
+        }
+        // Button Up переход вверх
+        window.onscroll=function(){scrollFunction()};
+        const upbuttons=document.querySelectorAll(".button-up");
+        for (const upbutton of upbuttons) {
+            upbutton.addEventListener("click", clickHandler);
+        }
+        function clickHandler(e) {
+             e.preventDefault();
+             const href=this.getAttribute("href");
+             document.querySelector(href).scrollIntoView({
+              behavior:"smooth"
+        });
+        }
+        function scrollFunction(){
+            if ( document.body.scrollTop >1000 || document.documentElement.scrollTop > 1000){   
+                
+                document.getElementById("btnUp").className="button-up visible";
+            } else {
+                 document.getElementById('btnUp').className ='button-up hidden';
+            }
+        }
+    </script>
 </body>
 </html>
