@@ -540,3 +540,50 @@ transition: 1s;
     margin-bottom: 10px;
     margin-top: 0;
 }
+/* Модуль01 урок 18 */
+/* Responsive */
+
+@media (max-width: 1000px) {
+    .container {
+        max-width: 738px;
+    }
+    .header-logo {
+        width: 150px;
+        height: 48px;
+        background-size: contain;
+    }
+    .header-nav {
+        gap: 22px;
+    }
+    .header-item {
+        flex-basis: 75.5%;
+    }
+    .bg {
+        margin-bottom: 72px;
+    }
+    .banner-box {
+        background-position: -80px center;
+        padding: 100px 40px 120px;
+    }
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 15px;
+    }
+    body {
+        background: aquamarine;
+    }
+    .menu-grid.slider {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-box {
+        flex-wrap: wrap;
+        align-content: space-between;
+        background: darkgrey;
+    }
+}
+
+
+
+
+
+
