@@ -541,7 +541,14 @@ transition: 1s;
 }
 /* Модуль01 урок 18 */
 /* Responsive */
-
+@media (min-width: 1000px) {
+    .footer-tel-visible {
+        display: none;
+    }
+    .footer-tel {
+        display: block;
+    }
+}
 @media (max-width: 1000px) {
     .container {
         max-width: 738px;
@@ -576,11 +583,13 @@ transition: 1s;
     }
     .footer-box {
         flex-wrap: wrap;
-        align-content: space-between;
+        align-content: center;
         background: darkgrey;
     }
+    .footer-tel {
+        display: none;
+    }
 }
-
 
 
 
