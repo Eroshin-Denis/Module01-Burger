@@ -576,7 +576,6 @@ transition: 1s;
         gap: 50px 15px;
     }
     body {
-        background: aquamarine;
     }
     .menu-grid.slider {
         grid-template-columns: repeat(3, 1fr);
@@ -584,13 +583,26 @@ transition: 1s;
     .footer-box {
         flex-wrap: wrap;
         align-content: center;
-        background: darkgrey;
     }
     .footer-tel {
         display: none;
     }
 }
-
+@media (max-width: 720px) {
+    .menu-grid.slider {
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+    .menu-grid.slider::-webkit-scrollbar {
+        display: none; /*chrome скрыть скрол*/
+    }
+    .slider .menu-grid-price {
+        width: 213px;
+    }
+    body {
+        overflow-x: hidden;
+    }
+}
 
 
 
