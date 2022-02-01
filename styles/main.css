@@ -9,7 +9,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 53px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 .header-logo {
@@ -42,6 +42,9 @@ header {
     background: transparent;
     border-radius: 1.5px;
     display: block;
+    align-self: baseline;   /* Выравнивание вдоль текста блока */
+    flex-basis: content;
+
 }
 .container {
     max-width: 1180px;
@@ -539,6 +542,48 @@ transition: 1s;
     margin-bottom: 10px;
     margin-top: 0;
 }
+/* Урок 19 */
+/* Modal */
+.burger {    /* Кнопка из трёх полосок */
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 58px;
+}
+.modal {
+    position: absolute;
+    display: none;
+    left: 50%;
+    margin-left: -250px; /*смещаем блок влево на расстояние, равное половине его ширины*/
+    max-width: 500px;
+    width: 100%;
+    height: 246px;
+    background: #FFF8DC;
+    top: 30px;
+    text-align: center;    
+    transition: 0.5s;
+}
+.modal .header-nav {
+    height: 100%;
+    margin: 0;
+    display: inline-flex;
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center;  
+}
+.burger-close {
+    position: absolute;
+    top: 20px;
+    right: 5%;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
 /* Модуль01 урок 18 */
 /* Responsive */
 @media (min-width: 1000px) {
@@ -558,14 +603,15 @@ transition: 1s;
         height: 48px;
         background-size: contain;
     }
-    .header-nav {
+      .header-nav {
         gap: 22px;
-    }
+      }
     .header-item {
         flex-basis: 75.5%;
     }
     .bg {
-        margin-bottom: 72px;
+        /* padding: 124px 0; */
+         margin-bottom: 70px;  
     }
     .banner-box {
         background-position: -80px center;
@@ -575,7 +621,8 @@ transition: 1s;
         grid-template-columns: repeat(2, 1fr);
         gap: 50px 15px;
     }
-    body {
+    body::-webkit-scrollbar {
+        display: none; /*chrome скрыть скрол*/
     }
     .menu-grid.slider {
         grid-template-columns: repeat(3, 1fr);
@@ -588,6 +635,49 @@ transition: 1s;
         display: none;
     }
 }
+@media (max-width: 770px) {
+/* .header-logo {    
+    width: 142.5px;
+    height: 45.6px;
+} */
+     nav {      /* Отключение блока навигации в Хейдере */
+     display: none;
+ } 
+  .burger {    /* Кнопка включения модального окна в хедере */
+     display: block;
+ } 
+ .modal {
+     display: block;
+ }
+.header {
+    justify-content: stretch;
+    gap: 0px
+}
+.header-item {
+    flex-basis: 80%;
+}
+.menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 62px 0 39px 0; 
+}
+.menu-grid {
+    gap: 54px 15px;
+}
+.menu-footer {
+    margin: 95px 0 35px 0;
+}
+.slider .menu-grid-cover {
+    height: 322px
+}
+.menu {
+    margin-bottom: 142px;
+}
+.footer {
+    padding-top: 68px;
+    padding-bottom: 106px;
+}
 @media (max-width: 720px) {
     .menu-grid.slider {
         overflow-y: hidden;
@@ -597,13 +687,177 @@ transition: 1s;
         display: none; /*chrome скрыть скрол*/
     }
     .slider .menu-grid-price {
-        width: 213px;
+        width: 213px; /* фиксированная ширина ценника для скролла что бы избежать дальнейшего сжимания блока*/
     }
     body {
         overflow-x: hidden;
     }
+    .banner-box {
+        padding: 69px 35px 98px;
+    }
 }
+@media (max-width: 625px) {
+    .footer-box {
+    justify-content: flex-start;
+    }
+}
+@media (max-width: 569px) {
+    .bg {
+        padding: 88px 0;
+        margin-bottom: 77px;
+     }
+    .breadcrumbs a {
+    font-size: 14px;
+}
+    .title {
+    font-size: 38px;
+    }
+    .description {
+        font-size: 15px;  
+    }
+    .banner .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media (max-width: 429px) {
+    .bg {
+        padding: 70px 0;
+        margin-bottom: 57px;
+     }
+     .banner .container {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+@media (max-width: 376px) {
+    .burger {    /* Кнопка включения модального окна в хедере */
+        display: block;
+        height: 30px;
+    } 
+    .header {
+        padding-top: 23px;
+        padding-bottom: 21px;
+       }
+       .bg {
+        padding: 60px 0;
+        margin-bottom: 37px;
+     }
+    .banner-box {
+        padding: 49px 22px 78px;
+    }
+}
+@media (max-width: 360px) {
+     .header-logo {
+        width: 116px;
+        height: 37px;
+        background-size: contain;
+    } 
+    .description-menu {
+        font-size: 12px;
+    }
+    .banner .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media (max-width: 321px) {
+   .header {
+    padding-top: 22px;
+    padding-bottom: 20px;
+   }
+    .header-logo {
+        width: 112px;
+        height: 34px;
+        background-size: contain;
+    }
+    .bg {
+        padding: 57px 0;
+        background: url(../images/bg-mobil.jpg);
+        background-position: center center;
+        margin-bottom: 34px;
+    }
+    .banner-box {
+        padding: 29px 18px 58px 17px;
+    }
+    .menu-title {
+        font-size: 27px;
+    }
+    .menu-select {
+        font-size: 12px;
+    }
+    .menu-header {
+        margin: 38px 0 31px 0;
+        gap: 20px;
+    }
+    .menu-grid-cover {
+        height: 180px;
+    } 
+     .menu-grid-cover img {
+        height: 180px;
+    } 
+    .menu-grid {
+        gap: 20px 10px;
+        margin-bottom: 10px; 
+    }
+    .menu-grid-title {
+        font-size: 13px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .menu-grid-price {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    .menu-grid-btn {
+        width: 129px;
+    }
+    .menu-footer {
+        margin: 60px 0 35px 0;
+    }
+    .menu-grid-item {
+        width: 140px;
+    }
+    .slider .menu-grid-cover {
+        width: 140px;
+        height: 180px;
+    }
+    .slider .menu-grid-price {
+        width: 100%;
+        text-align: center;
+    }
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 106px;
+    }
+    .menu {
+        margin-bottom: 60px;
+    }
+    .footer-tel-visible {
+        display: none;
+    }
+    .footer-tel {
+        display: block;
+    }
+    .footer-box div:nth-child(4) {
+        order: -1;
+    }
+    .footer-box div:nth-child(1) {
+        order: -2;
+    }
+    .footer-item h2 {
+        font-size: 18px;
+    }
+    .footer-list-tel li {
+        margin-top: 12px;
+        margin-bottom: 0px; 
+    } 
+    .footer-box {
+        justify-content: space-between;
+        gap: 35px 0;
+        align-items: center;
+    }
 
 
 
-
+}

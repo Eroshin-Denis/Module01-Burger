@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -15,6 +15,9 @@
     <header id="headerTop">
         <div class="container">
             <div class="header">
+                <div class="header-burger">
+                    <button class="burger" onclick="openModal()"><img src="images/modal/menu.svg" alt="Меню"></button>
+                </div>
                 <div class="header-item">
                     <a href="index.html" class="header-logo"></a>
                     <nav>
@@ -101,7 +104,7 @@
                         <div class="menu-grid-cover">
                             <img src="images/menu/03.jpg" alt="Бурег Гигант">
                         </div>
-                        <p class="menu-grid-title">Бурег Гигант</p>
+                        <p class="menu-grid-title">Бургер Гигант</p>
                         <p class="menu-grid-price">$37</p>
                         <button type="button" class="menu-grid-btn">
                             <span class="menu-grid-icon"></span>
@@ -134,7 +137,7 @@
                         <div class="menu-grid-cover">
                             <img src="images/menu/06.jpg" alt="Тройной бурегр">
                         </div>
-                        <p class="menu-grid-title">Тройной бурегр</p>
+                        <p class="menu-grid-title">Тройной бургер</p>
                         <p class="menu-grid-price">$7</p>
                         <button type="button" class="menu-grid-btn">
                             <span class="menu-grid-icon"></span>
@@ -239,6 +242,15 @@
         </div>
     </footer>
     <a href="#headerTop" class="button-up" id="btnUp">Наверх</a>
+    <div id="modal" class="modal">
+        <ul class="header-nav">
+            <li><a href="index.html" class="active">Главная</a></li>
+            <li><a href="#">Меню</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+        <button class="burger-close" onclick="closeModal()"><img src="images/modal/close.svg" alt="Крестик"></button>
+    </div>
     <script>
         // медленный скрол
         const links = document.querySelectorAll(".banner-link");
@@ -273,6 +285,15 @@
                  document.getElementById('btnUp').className ='button-up hidden';
             }
         }
+         
+         // Menu
+
+         function openModal() {
+            document.getElementById("modal").style.top="20px";
+            }
+         function closeModal() {
+             document.getElementById("modal").style.top ="-260px";
+            }
     </script>
 </body>
 </html>
