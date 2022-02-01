@@ -851,7 +851,7 @@ transition: 1s;
     } 
     .footer-box {
         justify-content: space-between;
-        gap: 28px 0;
+        gap: 28px 10px;
         align-items: center;
     }
 
