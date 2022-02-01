@@ -621,9 +621,6 @@ transition: 1s;
         grid-template-columns: repeat(2, 1fr);
         gap: 50px 15px;
     }
-    body::-webkit-scrollbar {
-        display: none; /*chrome скрыть скрол*/
-    }
     .menu-grid.slider {
         grid-template-columns: repeat(3, 1fr);
     }
