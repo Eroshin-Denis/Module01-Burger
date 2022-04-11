@@ -32,8 +32,8 @@
                     <a href="index.html" class="header-logo"></a>
                     <nav>
                         <ul class="header-nav">
-                            <li><a href="index.html" class="active">Главная</a></li>
-                            <li><a href="#">Меню</a></li>
+                            <li><a href="index.html" >Главная</a></li>
+                            <li><a href="#" class="active">Меню</a></li>
                             <li><a href="#">О нас</a></li>
                             <li><a href="#">Контакты</a></li>
                         </ul>
@@ -83,17 +83,16 @@
                     <select class="menu-select">
                         <option value="">Сортировать</option>
                         <option value="up">По возростанию</option>
-                        <option value="down">По убыванию</option>
-                        <option value=""></option>        
+                        <option value="down">По убыванию</option>    
                     </select>
                 </div>
                 <div class="menu-grid">
                     <div class="menu-grid-item">
-                        <div class="menu-grid-cover">
-                            <img src="images/menu/01.jpg" alt="Острый бургер">
+                        <div id="B" class="menu-grid-cover">
+                            <img id="j" src="images/menu/01.jpg" alt="Острый бургер">
                         </div>
                         <p class="menu-grid-title">Острый бургер</p>
-                        <p class="menu-grid-price">$26</p>
+                        <p id="tab" class="menu-grid-price">$26</p>
                         <button type="button" class="menu-grid-btn">
                             <span class="menu-grid-icon"></span>
                             <span class="menu-grid-text">купить</span> 
@@ -104,7 +103,7 @@
                             <img src="images/menu/02.jpg" alt="Гриль Бургер">
                         </div>
                         <p class="menu-grid-title">Гриль Бургер</p>
-                        <p class="menu-grid-price">$16</p>
+                        <p id="tab2" class="menu-grid-price">$16</p>
                         <button type="button" class="menu-grid-btn">
                             <span class="menu-grid-icon"></span>
                             <span class="menu-grid-text">купить</span>
@@ -254,8 +253,8 @@
     <a href="#headerTop" class="button-up" id="btnUp">Наверх</a>
     <div id="modal" class="modal">
         <ul class="header-nav">
-            <li><a href="index.html" class="active">Главная</a></li>
-            <li><a href="#">Меню</a></li>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#" class="active">Меню</a></li>
             <li><a href="#">О нас</a></li>
             <li><a href="#">Контакты</a></li>
         </ul>
@@ -297,13 +296,63 @@
         }
          
          // Menu
-
          function openModal() {
             document.getElementById("modal").style.top="20px";
             }
          function closeModal() {
              document.getElementById("modal").style.top ="-260px";
             }
+            // ABJ
+            //   const root = document.querySelector(':root');
+            //   const rootStyles = getComputedStyle(root);
+            //   let S = rootStyles.getPropertyValue('--S');
+                let M=1, Z=2, p=9 ;
+                var el_img = document.getElementById("j"); 
+                var el_box_1 = document.getElementById("B"); 
+                var el_tab = document.getElementById("tab");
+                var el_tab2 = document.getElementById("tab2");
+               
+               let el_box = document.getElementsByClassName('menu-grid-cover')[p]; 
+               alert( 'Да вы знаток!' );
+              
+              el_tab.innerHTML = 'Нвчало функции';
+              
+              ABJ = function() {
+               
+                Z = el_box_1.offsetHeight; //коробка
+                M = el_img.offsetHeight;  // картинка
+
+                 if (Z !== (M +10) && p>(0)) {
+                   
+                p=p-1
+  
+                
+                el_tab.innerHTML = Z;
+                el_tab2.innerHTML = M;
+                document.getElementsByClassName('menu-grid-cover')[p].style.height = (M) + 10 + 'px';
+                ABJ();
+                 }
+                 else {
+                    p=9
+                    setTimeout(ABJ, 15000);
+                    // alert( 'Начало исправлений'+ p );
+                 }
+                }
+            //         var Z = el_img.offsetHeight;
+            //  var el_img = document.getElementById("j"); 
+            //  let el_box = document.getElementsByClassName('menu-grid-cover')[0]; 
+            //  var Z = el_img.offsetHeight;
+            //  root.style.setProperty('--S', Z + 50 + 'px');
+             
+            // el_tab.innerHTML = Z ;
+
+            //     }
+            // }
+            // else {
+            //     el_tab.innerHTML = 'Условие не выполнено';
+            // }
+             ABJ();
+             
     </script>
 </body>
 </html>
