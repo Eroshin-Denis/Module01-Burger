@@ -2,7 +2,7 @@ body {
     font-family: 'Nunito Sans', sans-serif;
 }
 header {
-    border-bottom: 1px solid#DEDEDE;
+    border-bottom: 1px solid #DEDEDE;
 }
 .header {
     font-family: 'Open Sans', sans-serif;
@@ -11,6 +11,10 @@ header {
     justify-content: space-between;
     padding-top: 25px;
     padding-bottom: 25px;
+    gap: 0;
+}
+.header-item {
+    margin-right: auto;
 }
 .header-logo {
     display: block;
