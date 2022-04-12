@@ -88,11 +88,11 @@
                 </div>
                 <div class="menu-grid">
                     <div class="menu-grid-item">
-                        <div id="B" class="menu-grid-cover">
-                            <img id="j" src="images/menu/01.jpg" alt="Острый бургер">
+                        <div class="menu-grid-cover">
+                            <img src="images/menu/01.jpg" alt="Острый бургер">
                         </div>
                         <p class="menu-grid-title">Острый бургер</p>
-                        <p id="tab" class="menu-grid-price">$26</p>
+                        <p class="menu-grid-price">$26</p>
                         <button type="button" class="menu-grid-btn">
                             <span class="menu-grid-icon"></span>
                             <span class="menu-grid-text">купить</span> 
@@ -103,7 +103,7 @@
                             <img src="images/menu/02.jpg" alt="Гриль Бургер">
                         </div>
                         <p class="menu-grid-title">Гриль Бургер</p>
-                        <p id="tab2" class="menu-grid-price">$16</p>
+                        <p class="menu-grid-price">$16</p>
                         <button type="button" class="menu-grid-btn">
                             <span class="menu-grid-icon"></span>
                             <span class="menu-grid-text">купить</span>
@@ -306,52 +306,52 @@
             //   const root = document.querySelector(':root');
             //   const rootStyles = getComputedStyle(root);
             //   let S = rootStyles.getPropertyValue('--S');
-                let M=1, Z=2, p=9 ;
-                var el_img = document.getElementById("j"); 
-                var el_box_1 = document.getElementById("B"); 
-                var el_tab = document.getElementById("tab");
-                var el_tab2 = document.getElementById("tab2");
+            //     let M=1, Z=2, p=9 ;
+            //     var el_img = document.getElementById("j"); 
+            //     var el_box_1 = document.getElementById("B"); 
+            //     var el_tab = document.getElementById("tab");
+            //     var el_tab2 = document.getElementById("tab2");
                
-               let el_box = document.getElementsByClassName('menu-grid-cover')[p]; 
-               alert( 'Да вы знаток!' );
+            //    let el_box = document.getElementsByClassName('menu-grid-cover')[p]; 
+            //    alert( 'Да вы знаток!' );
               
-              el_tab.innerHTML = 'Нвчало функции';
+            //   el_tab.innerHTML = 'Нвчало функции';
               
-              ABJ = function() {
+            //   ABJ = function() {
                
-                Z = el_box_1.offsetHeight; //коробка
-                M = el_img.offsetHeight;  // картинка
+            //     Z = el_box_1.offsetHeight; //коробка
+            //     M = el_img.offsetHeight;  // картинка
 
-                 if (Z !== (M +10) && p>(0)) {
+            //      if (Z !== (M +10) && p>(0)) {
                    
-                p=p-1
+            //     p=p-1
   
                 
-                el_tab.innerHTML = Z;
-                el_tab2.innerHTML = M;
-                document.getElementsByClassName('menu-grid-cover')[p].style.height = (M) + 10 + 'px';
-                ABJ();
-                 }
-                 else {
-                    p=9
-                    setTimeout(ABJ, 15000);
-                    // alert( 'Начало исправлений'+ p );
-                 }
-                }
-            //         var Z = el_img.offsetHeight;
-            //  var el_img = document.getElementById("j"); 
-            //  let el_box = document.getElementsByClassName('menu-grid-cover')[0]; 
-            //  var Z = el_img.offsetHeight;
-            //  root.style.setProperty('--S', Z + 50 + 'px');
-             
-            // el_tab.innerHTML = Z ;
-
+            //     el_tab.innerHTML = Z;
+            //     el_tab2.innerHTML = M;
+            //     document.getElementsByClassName('menu-grid-cover')[p].style.height = (M) + 10 + 'px';
+            //     ABJ();
+            //      }
+            //      else {
+            //         p=9
+            //         setTimeout(ABJ, 15000);
+            //         // alert( 'Начало исправлений'+ p );
+            //      }
             //     }
-            // }
-            // else {
-            //     el_tab.innerHTML = 'Условие не выполнено';
-            // }
-             ABJ();
+            // //         var Z = el_img.offsetHeight;
+            // //  var el_img = document.getElementById("j"); 
+            // //  let el_box = document.getElementsByClassName('menu-grid-cover')[0]; 
+            // //  var Z = el_img.offsetHeight;
+            // //  root.style.setProperty('--S', Z + 50 + 'px');
+             
+            // // el_tab.innerHTML = Z ;
+
+            // //     }
+            // // }
+            // // else {
+            // //     el_tab.innerHTML = 'Условие не выполнено';
+            // // }
+            //  ABJ();
              
     </script>
 </body>
