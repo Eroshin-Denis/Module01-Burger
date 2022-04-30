@@ -388,7 +388,7 @@ header {
     cursor: pointer;
 }
 .footer-list li a:hover {
-    color: yellow;
+    color: #FBB731;
 }
 .footer-list-tel li a:hover {
     color: #DEDEDE;
@@ -460,18 +460,24 @@ transition: 1s;
 .content-link,
 .promo a {
     color: #1E2F40;
-    background-color: #FBB731;                             /*background: #FBB731;*/  
+    background: #FBB731;                             /*background: #FBB731;*/  
     border-radius: 5px;
     Line-height: 18px; 
     text-decoration: none;
-    padding: 20px 45px;
+    padding: 19px 44px;
+    border: 1px solid #FBB731;   /* рамка для кнопки эффекта hover */
     display: inline-block;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
+    transition: 0.3s;
+}
+.content-link:hover,
+.promo a:hover {
+    background-color: transparent;
+    color: #FBB731;
 }
 .visual{                                                 
-    
     display: flex;
     justify-content: flex-end;
     position: relative;
@@ -700,9 +706,9 @@ transition: 1s;
 .menu-footer {
     margin: 95px 0 35px 0;
 }
-.slider .menu-grid-cover {
+/* .slider .menu-grid-cover {
     height: 322px
-}
+} */
 .menu {
     margin-bottom: 142px;
 }
@@ -777,6 +783,18 @@ transition: 1s;
         padding-left: 10px;
         padding-right: 10px;
     }
+    .menu-grid-item {
+        
+    }
+    .menu-grid-title {
+      padding-left: 12%;
+      padding-right: 12%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .slider .menu-grid-title {
+        padding: 0;
+    }
 }
 @media (max-width: 429px) {
     .bg {
@@ -808,6 +826,9 @@ transition: 1s;
         width: 250px;
         left: -220px; 
         bottom: -10%;
+    }
+    .menu-grid-title {
+       padding: 0;
     }
 }
 @media (max-width: 376px) {
