@@ -759,8 +759,22 @@ opacity: 0;
 }
 @media (max-width: 625px) {
     .footer-box {
-    justify-content: space-evenly;
     gap: 28px 10px;
+    }
+    .footer-tel-visible {
+        display: none;
+    }
+    .footer-tel {
+        display: block;
+    }
+    .footer-box div:nth-child(4) {
+        order: -1;
+    }
+    .footer-box div:nth-child(1) {
+        order: -2;
+    }
+    .footer-box div:nth-child(2) {
+        flex-basis: 60%;
     }
 }
 @media (max-width: 569px) {
@@ -780,9 +794,6 @@ opacity: 0;
     .banner .container {
         padding-left: 10px;
         padding-right: 10px;
-    }
-    .menu-grid-item {
-        
     }
     .menu-grid-title {
       padding-left: 12%;
@@ -828,6 +839,9 @@ opacity: 0;
     .menu-grid-title {
        padding: 0;
     }
+    .footer-box div:nth-child(2) {
+        flex-basis: content;
+    }
 }
 @media (max-width: 376px) {
     .burger {    /* Кнопка включения модального окна в хедере */
@@ -861,22 +875,6 @@ opacity: 0;
     }
 }
 @media (max-width: 334px) {
-    .footer-tel-visible {
-        display: none;
-    }
-    .footer-tel {
-        display: block;
-    }
-    .footer-box div:nth-child(4) {
-        order: -1;
-    }
-    .footer-box div:nth-child(1) {
-        order: -2;
-    }
-    .footer-box {
-        justify-content: space-between;
-        align-items: center;
-    }
     .footer-list-tel li {
         margin-top: 12px;
         margin-bottom: 0px; 
