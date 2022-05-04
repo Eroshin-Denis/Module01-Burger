@@ -955,7 +955,9 @@ opacity: 0;
     .footer-item h2 {
         font-size: 18px;
     }
- 
+    .footer-box div:nth-child(n+2) {
+        flex-shrink: 1;
+    }
 
 
 }
