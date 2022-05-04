@@ -406,6 +406,7 @@ bottom: 20px;
 right: 20px;
 border-radius: 5px;
 transition: 1s;
+opacity: 0;
 }
 .button-up:hover {
     background-color: #F37335;
