@@ -720,8 +720,8 @@ opacity: 0;
 }
 @media (max-width: 720px) {
     .menu-grid.slider {
-        overflow-y: hidden;
-        overflow-x: scroll;
+        /* overflow-y: hidden; */
+        overflow-x: hidden;
     }
     .menu-grid.slider::-webkit-scrollbar {
         display: none; /*chrome скрыть скрол*/
