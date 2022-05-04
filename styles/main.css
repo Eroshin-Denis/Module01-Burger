@@ -577,7 +577,7 @@ transition: 1s;
     width: 80%;
     height: 246px;
     background: #FFF8DC;
-    top: 30px;
+    top: -260px;
     text-align: center;    
     transition: 0.5s;
 }
